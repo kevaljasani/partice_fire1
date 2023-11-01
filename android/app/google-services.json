@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873396092057",
+    "project_id": "praticefire1",
+    "storage_bucket": "praticefire1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873396092057:android:d63568ee99191d852d0c08",
+        "android_client_info": {
+          "package_name": "com.example.partice_fire1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZqnLluGtM-Hb6l9srnABf4i1rjEualJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
