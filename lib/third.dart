@@ -58,7 +58,7 @@ class _thirdState extends State<third> {
               return ListView.builder(
                 itemCount: val.length,
                 itemBuilder: (context, index) {
-                  print("Hello");
+                  // print("Hello");
                   return (mob != val[index]['t1'])
                       ? Card(
                           child: InkWell(
