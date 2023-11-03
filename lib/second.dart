@@ -22,9 +22,6 @@ class _secondState extends State<second> {
   TextEditingController t3 = TextEditingController();
   TextEditingController t4 = TextEditingController();
 
-  String l = "";
-  String l1 = "";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +42,9 @@ class _secondState extends State<second> {
                         borderRadius: BorderRadius.circular(50)),
                     label: Text(
                       "Name",
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
                     )),
               ),
               TextField(
@@ -96,7 +95,7 @@ class _secondState extends State<second> {
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(
                       builder: (context) {
-                        return first(l, l1);
+                        return first();
                       },
                     ));
                   },

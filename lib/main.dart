@@ -15,11 +15,6 @@ Future<void> main() async {
 }
 
 class first extends StatefulWidget {
-  String? l;
-  String? l1;
-
-  first([this.l, this.l1]);
-
   static SharedPreferences? prefs;
 
   @override
@@ -92,16 +87,18 @@ class _firstState extends State<first> {
                     final data = event.snapshot.value;
                     Map m = data as Map;
                     List l = m.values.toList();
+                    print(l);
 
                     bool t = false;
 
                     for (int i = 0; i < l.length; i++) {
-                      if (l[i]['name'] == name.text &&
-                          l[i]['contact'] == contact.text) {
+                      if (l[i]['t1'] == name.text &&
+                          l[i]['t2'] == contact.text) {
                         t = true;
                         break;
                       }
                     }
+                    setState(() {});
 
                     if (t == true) {
                       first.prefs!.setString('contact', contact.text);
@@ -111,6 +108,8 @@ class _firstState extends State<first> {
                           return third();
                         },
                       ));
+
+                      setState(() {});
                     } else {
                       showDialog(
                         barrierDismissible: false,
